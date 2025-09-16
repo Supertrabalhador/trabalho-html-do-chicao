@@ -1,0 +1,86 @@
+[trabalho-html-do-chicao.html.html](https://github.com/user-attachments/files/22354689/trabalho-html-do-chicao.html.html)
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição para Aula Remota na fatec Ferraz. OBS: A presença na aula é realizada do final da aula remota.</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulário de Inscrição</h1>
+        <p>Preencha os campos abaixo para se inscrever na nossa aula remota.</p>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                
+                <section>
+                    <label for="nome-completo">Nome Completo:</label>
+                    <input type="text" id="nome-completo" name="nome-completo" required>
+                </section>
+                
+                <section>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </section>
+                
+                <section>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </section>
+                
+                <section>
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento">
+                </section>
+                
+                <section>
+                    <p>Gênero:</p>
+                    <label for="masculino">
+                        <input type="radio" id="masculino" name="genero" value="masculino"> Masculino
+                    </label>
+                    <label for="feminino">
+                        <input type="radio" id="feminino" name="genero" value="feminino"> Feminino
+                    </label>
+                    <label for="outro">
+                        <input type="radio" id="outro" name="genero" value="outro"> Outro
+                    </label>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalhes da Inscrição</legend>
+                
+                <section>
+                    <label for="tipo-inscricao">Tipo de Inscrição:</label>
+                    <select id="tipo-inscricao" name="tipo-inscricao">
+                        <option value="estudante">estudante</option>
+                        <option value="palestrante">palestrante</option>
+                        <option value="professor">professor</option>
+                    </select>
+                </section>
+                
+                <section>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" maxlength="200" rows="5"></textarea>
+                </section>
+            </fieldset>
+            
+            <footer>
+                <button type="submit">Enviar Inscrição</button>
+                <button type="reset">Limpar Formulário</button>
+            </footer>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Fatec Ferraz. exercício do chicão 2025.</p>
+    </footer>
+
+</body>
+</html>
