@@ -1,6 +1,96 @@
 
+<head>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#nome-completo {
+    background-color: #fff8f0;
+}
 
 
+section.campo {
+    margin-bottom: 15px;
+}
+
+input[type="email"] {
+    border: 2px solid #0077b6;
+    padding: 5px;
+}
+button:hover {
+    background-color: #0096c7;
+    color: white;
+    cursor: pointer;
+}
+
+
+h1, legend {
+    font-family: "Segoe UI", sans-serif;
+    color: #023e8a;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0077b6;
+    color: #fff;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.campo {
+    display: block;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-group {
+    display: flex;
+    gap: 15px;
+}
+
+.flex-group section {
+    flex: 1;
+}
 </head>
 <body>
 
@@ -72,6 +162,39 @@
             </footer>
 
         </form>
+
+        <fieldset>
+    <legend>Informações Pessoais</legend>
+    
+    <div class="flex-group">
+        <section class="campo">
+            <label for="nome-completo">Nome Completo:</label>
+            <input type="text" id="nome-completo" name="nome-completo" required>
+        </section>
+        
+        <section class="campo">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </section>
+        
+        <section class="campo">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+        </section>
+    </div>
+    
+    <section class="campo">
+        <label for="data-nascimento">Data de Nascimento:</label>
+        <input type="date" id="data-nascimento" name="data-nascimento">
+    </section>
+    
+    <section class="campo">
+        <p>Gênero:</p>
+        <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+        <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+        <label><input type="radio" name="genero" value="outro"> Outro</label>
+    </section>
+</fieldset>
     </main>
 
     <footer>
